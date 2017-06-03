@@ -56,3 +56,36 @@ alert(other); // [1, 2, 3, [4]]
 ```
 webpack
 ```
+
+7.  Add a section to webpack.config.js for running the webpack-dev-server
+
+```
+var config = {
+  devServer: {
+    contentBase: __dirname + '/src', // `__dirname` is root of the project
+  }
+}
+```
+
+8.  Add an index.html to the src directory
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webpack 2 Setup</title>
+</head>
+<body>
+
+  <!-- bundler script file -->
+  <script src="/bundle.js"></script>
+</body>
+</html>
+```
+
+9.  Run the webpack-dev-server
+
+```
+webpack-dev-server
+```
+
