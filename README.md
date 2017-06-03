@@ -89,3 +89,26 @@ var config = {
 webpack-dev-server
 ```
 
+10.  Adding webpack modules
+
+```
+npm install --save-dev babel-loader babel-core babel-preset-es2015
+```
+
+11.  Update app.js to use ES6 importing
+
+``
+import _ from 'lodash';
+
+var array = [1];
+var other = _.concat(array, 2, [3], [[4]]);
+
+alert(other); // [1, 2, 3, [4]]
+```
+
+12.  Run the dev server again to verify it works
+
+```
+webpack-dev-server
+```
+
