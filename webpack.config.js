@@ -9,6 +9,9 @@ var config = {
     path: __dirname + '/dist', // `dist` is the destination
     filename: 'bundle.js',
   },
+  devServer: {
+    contentBase: __dirname + '/src', // `__dirname` is root of the project
+  },
 };
 
 module.exports = config;
