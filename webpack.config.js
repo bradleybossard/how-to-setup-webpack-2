@@ -14,6 +14,7 @@ var config = {
   },
 
   module: {
+    rules: [
     {
       test: /\.js$/, // Check for all js files
       exclude: /node_modules/,
@@ -23,11 +24,20 @@ var config = {
       }]
     }
     ]
-  }
+  },
 
-
+  devtool: "eval-source-map" // Default development sourcemap
 };
 
+// Check if build is running in production mode, then change the sourcemap type
+if (process.env.NODE_ENV === "production") {
+  config.devtool = ""; // No sourcemap for production
+
+  // Add more configuration for production here like
+  // SASS & CSS loaders
+  // Offline plugin
+  // Etc,
+}
 
 
 module.exports = config;
