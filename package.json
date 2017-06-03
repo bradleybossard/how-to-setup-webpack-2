@@ -1,0 +1,23 @@
+{
+  "name": "how-to-setup-webpack-2",
+  "version": "1.0.0",
+  "description": "Following along with this tutorial https://gokulkrishh.github.io/webpack/2017/02/03/how-to-setup-webpack-2.html",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradleybossard/how-to-setup-webpack-2.git"
+  },
+  "keywords": [],
+  "author": "Bradley Bossard <bradleybossard@gmail.com> (http://bradleybossard.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bradleybossard/how-to-setup-webpack-2/issues"
+  },
+  "homepage": "https://github.com/bradleybossard/how-to-setup-webpack-2#readme"
+}
